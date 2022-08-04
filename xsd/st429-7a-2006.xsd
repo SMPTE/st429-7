@@ -74,7 +74,7 @@ default="http://www.smpte-ra.org/schemas/429-7/2006/CPL#standardmarkers"/>
   <xs:complexType name="ContentKindType">
     <xs:simpleContent>
       <xs:extension base="xs:string">
-        <xs:attribute name="scope" type="xs:anyURI" use="optional" default="http://www.smptera.org/schemas/429-7/2006/CPL#standard-content"/>
+        <xs:attribute name="scope" type="xs:anyURI" use="optional" default="http://www.smpte-ra.org/schemas/429-7/2006/CPL#standard-content"/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
