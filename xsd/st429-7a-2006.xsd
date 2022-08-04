@@ -5,8 +5,7 @@ xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
 xmlns:xs="http://www.w3.org/2001/XMLSchema"
 elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xs:import namespace="http://www.w3.org/2000/09/xmldsig#"
-schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-
-20020212/xmldsig-core-schema.xsd"/>
+schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd"/>
   <xs:import namespace="http://www.w3.org/XML/1998/namespace"
 schemaLocation="http://www.w3.org/2001/03/xml.xsd"/>
   <!-- CompositionPlaylist -->
@@ -75,8 +74,7 @@ default="http://www.smpte-ra.org/schemas/429-7/2006/CPL#standardmarkers"/>
   <xs:complexType name="ContentKindType">
     <xs:simpleContent>
       <xs:extension base="xs:string">
-        <xs:attribute name="scope" type="xs:anyURI" use="optional" default="http://www.smptera.
-org/schemas/429-7/2006/CPL#standard-content"/>
+        <xs:attribute name="scope" type="xs:anyURI" use="optional" default="http://www.smptera.org/schemas/429-7/2006/CPL#standard-content"/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
@@ -190,8 +188,7 @@ maxOccurs="unbounded"/>
   <!-- UUID -->
   <xs:simpleType name="UUID">
     <xs:restriction base="xs:anyURI">
-      <xs:pattern value="urn:uuid:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-
-[0-9a-fA-F]{12}"/>
+      <xs:pattern value="urn:uuid:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"/>
     </xs:restriction>
   </xs:simpleType>
   <!-- UserText -->
