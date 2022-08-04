@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema targetNamespace="http://www.smpte-ra.org/schemas/429-7/2006/CPL"
-xmlns:cpl="http://www.smpte-ra.org/schemas/429-7/2006/CPL"
-xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-xmlns:xs="http://www.w3.org/2001/XMLSchema"
-elementFormDefault="qualified" attributeFormDefault="unqualified">
+           xmlns:cpl="http://www.smpte-ra.org/schemas/429-7/2006/CPL"
+           xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xs:import namespace="http://www.w3.org/2000/09/xmldsig#"
-schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd"/>
+             schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd"/>
   <xs:import namespace="http://www.w3.org/XML/1998/namespace"
-schemaLocation="http://www.w3.org/2001/03/xml.xsd"/>
+             schemaLocation="http://www.w3.org/2001/03/xml.xsd"/>
   <!-- CompositionPlaylist -->
   <xs:element name="CompositionPlaylist" type="cpl:CompositionPlaylistType"/>
   <xs:complexType name="CompositionPlaylistType">
@@ -24,8 +24,7 @@ schemaLocation="http://www.w3.org/2001/03/xml.xsd"/>
       <xs:element name="RatingList">
         <xs:complexType>
           <xs:sequence>
-            <xs:element name="Rating" type="cpl:RatingType" minOccurs="0"
-maxOccurs="unbounded"/>
+            <xs:element name="Rating" type="cpl:RatingType" minOccurs="0" maxOccurs="unbounded"/>
           </xs:sequence>
         </xs:complexType>
       </xs:element>
@@ -47,8 +46,7 @@ maxOccurs="unbounded"/>
         <xs:complexType>
           <xs:simpleContent>
             <xs:extension base="xs:string">
-              <xs:attribute name="scope" type="xs:anyURI" use="optional"
-default="http://www.smpte-ra.org/schemas/429-7/2006/CPL#standardmarkers"/>
+              <xs:attribute name="scope" type="xs:anyURI" use="optional" default="http://www.smpte-ra.org/schemas/429-7/2006/CPL#standardmarkers"/>
             </xs:extension>
           </xs:simpleContent>
         </xs:complexType>
@@ -94,13 +92,10 @@ default="http://www.smpte-ra.org/schemas/429-7/2006/CPL#standardmarkers"/>
         <xs:complexType>
           <xs:sequence>
             <xs:element name="MainMarkers" type="cpl:MarkerAssetType" minOccurs="0"/>
-            <xs:element name="MainPicture" type="cpl:PictureTrackFileAssetType"
-minOccurs="0"/>
+            <xs:element name="MainPicture" type="cpl:PictureTrackFileAssetType" minOccurs="0"/>
             <xs:element name="MainSound" type="cpl:SoundTrackFileAssetType" minOccurs="0"/>
-            <xs:element name="MainSubtitle" type="cpl:SubtitleTrackFileAssetType"
-minOccurs="0"/>
-            <xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded"
-processContents="lax" />
+            <xs:element name="MainSubtitle" type="cpl:SubtitleTrackFileAssetType" minOccurs="0"/>
+            <xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded" processContents="lax"/>
           </xs:sequence>
         </xs:complexType>
       </xs:element>
@@ -167,8 +162,7 @@ processContents="lax" />
           <xs:element name="MarkerList">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="Marker" type="cpl:MarkerType" minOccurs="0"
-maxOccurs="unbounded"/>
+                <xs:element name="Marker" type="cpl:MarkerType" minOccurs="0" maxOccurs="unbounded"/>
               </xs:sequence>
             </xs:complexType>
           </xs:element>
